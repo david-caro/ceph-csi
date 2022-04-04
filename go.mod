@@ -21,7 +21,7 @@ require (
 	github.com/onsi/gomega v1.16.0
 	github.com/pborman/uuid v1.2.1
 	github.com/prometheus/client_golang v1.11.0
-	github.com/stretchr/testify v1.7.0
+	github.com/stretchr/testify v1.7.1
 	golang.org/x/crypto v0.0.0-20210711020723-a769d52b0f97
 	golang.org/x/sys v0.0.0-20210817190340-bfb29a6856f2
 	google.golang.org/grpc v1.41.0

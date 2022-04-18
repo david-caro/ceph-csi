@@ -1,40 +1,31 @@
 package admin
 
 import (
-	"github.com/ceph/go-ceph/internal/commands"
+	"github.com/ceph/go-ceph/common/admin/manager"
 )
 
 const mirroring = "mirroring"
 
 // EnableModule will enable the specified manager module.
 //
+// Deprecated: use the equivalent function in cluster/admin/manager.
+//
 // Similar To:
 //  ceph mgr module enable <module> [--force]
 func (fsa *FSAdmin) EnableModule(module string, force bool) error {
-	m := map[string]string{
-		"prefix": "mgr module enable",
-		"module": module,
-		"format": "json",
-	}
-	if force {
-		m["force"] = "--force"
-	}
-	// Why is this _only_ part of the mon command json? You'd think a mgr
-	// command would be available as a MgrCommand but I couldn't figure it out.
-	return commands.MarshalMonCommand(fsa.conn, m).NoData().End()
+	mgradmin := manager.NewFromConn(fsa.conn)
+	return mgradmin.EnableModule(module, force)
 }
 
 // DisableModule will disable the specified manager module.
 //
+// Deprecated: use the equivalent function in cluster/admin/manager.
+//
 // Similar To:
 //  ceph mgr module disable <module>
 func (fsa *FSAdmin) DisableModule(module string) error {
-	m := map[string]string{
-		"prefix": "mgr module disable",
-		"module": module,
-		"format": "json",
-	}
-	return commands.MarshalMonCommand(fsa.conn, m).NoData().End()
+	mgradmin := manager.NewFromConn(fsa.conn)
+	return mgradmin.DisableModule(module)
 }
 
 // EnableMirroringModule will enable the mirroring module for cephfs.
@@ -42,7 +33,8 @@ func (fsa *FSAdmin) DisableModule(module string) error {
 // Similar To:
 //  ceph mgr module enable mirroring [--force]
 func (fsa *FSAdmin) EnableMirroringModule(force bool) error {
-	return fsa.EnableModule(mirroring, force)
+	mgradmin := manager.NewFromConn(fsa.conn)
+	return mgradmin.EnableModule(mirroring, force)
 }
 
 // DisableMirroringModule will disable the mirroring module for cephfs.
@@ -50,5 +42,6 @@ func (fsa *FSAdmin) EnableMirroringModule(force bool) error {
 // Similar To:
 //  ceph mgr module disable mirroring
 func (fsa *FSAdmin) DisableMirroringModule() error {
-	return fsa.DisableModule(mirroring)
+	mgradmin := manager.NewFromConn(fsa.conn)
+	return mgradmin.DisableModule(mirroring)
 }

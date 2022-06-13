@@ -148,7 +148,7 @@ github.com/grpc-ecosystem/grpc-gateway/runtime
 github.com/grpc-ecosystem/grpc-gateway/utilities
 # github.com/hashicorp/errwrap v1.1.0
 github.com/hashicorp/errwrap
-# github.com/hashicorp/go-cleanhttp v0.5.1
+# github.com/hashicorp/go-cleanhttp v0.5.2
 github.com/hashicorp/go-cleanhttp
 # github.com/hashicorp/go-hclog v0.16.2
 github.com/hashicorp/go-hclog
@@ -165,9 +165,9 @@ github.com/hashicorp/go-retryablehttp
 github.com/hashicorp/go-rootcerts
 # github.com/hashicorp/go-secure-stdlib/mlock v0.1.1
 github.com/hashicorp/go-secure-stdlib/mlock
-# github.com/hashicorp/go-secure-stdlib/parseutil v0.1.1
+# github.com/hashicorp/go-secure-stdlib/parseutil v0.1.6
 github.com/hashicorp/go-secure-stdlib/parseutil
-# github.com/hashicorp/go-secure-stdlib/strutil v0.1.1
+# github.com/hashicorp/go-secure-stdlib/strutil v0.1.2
 github.com/hashicorp/go-secure-stdlib/strutil
 # github.com/hashicorp/go-sockaddr v1.0.2
 github.com/hashicorp/go-sockaddr
@@ -191,10 +191,10 @@ github.com/hashicorp/hcl/json/token
 # github.com/hashicorp/vault v1.4.2
 github.com/hashicorp/vault/command/agent/auth
 github.com/hashicorp/vault/command/agent/auth/kubernetes
-# github.com/hashicorp/vault/api v1.3.0
+# github.com/hashicorp/vault/api v1.7.2
 ## explicit
 github.com/hashicorp/vault/api
-# github.com/hashicorp/vault/sdk v0.3.0
+# github.com/hashicorp/vault/sdk v0.5.1
 github.com/hashicorp/vault/sdk/helper/certutil
 github.com/hashicorp/vault/sdk/helper/compressutil
 github.com/hashicorp/vault/sdk/helper/consts
@@ -252,7 +252,7 @@ github.com/mitchellh/copystructure
 github.com/mitchellh/go-homedir
 # github.com/mitchellh/go-testing-interface v1.0.0
 github.com/mitchellh/go-testing-interface
-# github.com/mitchellh/mapstructure v1.4.2
+# github.com/mitchellh/mapstructure v1.5.0
 github.com/mitchellh/mapstructure
 # github.com/mitchellh/reflectwalk v1.0.1
 github.com/mitchellh/reflectwalk

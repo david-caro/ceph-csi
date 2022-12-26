@@ -6,7 +6,7 @@ require (
 	github.com/aws/aws-sdk-go v1.41.15
 	github.com/ceph/ceph-csi/api v0.0.0-00010101000000-000000000000
 	github.com/ceph/go-ceph v0.12.0
-	github.com/container-storage-interface/spec v1.5.0
+	github.com/container-storage-interface/spec v1.7.0
 	github.com/csi-addons/replication-lib-utils v0.2.0
 	github.com/csi-addons/spec v0.1.1
 	github.com/go-sql-driver/mysql v1.5.0 // indirect
@@ -14,25 +14,25 @@ require (
 	github.com/grpc-ecosystem/go-grpc-middleware v1.3.0
 	github.com/grpc-ecosystem/go-grpc-prometheus v1.2.0
 	github.com/hashicorp/vault/api v1.3.0
-	github.com/kubernetes-csi/csi-lib-utils v0.10.0
+	github.com/kubernetes-csi/csi-lib-utils v0.12.0
 	github.com/kubernetes-csi/external-snapshotter/client/v4 v4.2.0
 	github.com/libopenstorage/secrets v0.0.0-20210908194121-a1d19aa9713a
 	github.com/onsi/ginkgo v1.16.5
-	github.com/onsi/gomega v1.16.0
+	github.com/onsi/gomega v1.19.0
 	github.com/pborman/uuid v1.2.1
-	github.com/prometheus/client_golang v1.11.0
-	github.com/stretchr/testify v1.7.0
-	golang.org/x/crypto v0.0.0-20210711020723-a769d52b0f97
-	golang.org/x/sys v0.0.0-20210817190340-bfb29a6856f2
-	google.golang.org/grpc v1.41.0
-	k8s.io/api v0.22.2
-	k8s.io/apimachinery v0.22.2
+	github.com/prometheus/client_golang v1.14.0
+	github.com/stretchr/testify v1.8.0
+	golang.org/x/crypto v0.0.0-20210921155107-089bfa567519
+	golang.org/x/sys v0.3.0
+	google.golang.org/grpc v1.49.0
+	k8s.io/api v0.26.0
+	k8s.io/apimachinery v0.26.0
 	k8s.io/client-go v12.0.0+incompatible
 	k8s.io/cloud-provider v0.22.2
-	k8s.io/klog/v2 v2.10.0
+	k8s.io/klog/v2 v2.80.1
 	k8s.io/kubernetes v1.22.2
 	k8s.io/mount-utils v0.22.2
-	k8s.io/utils v0.0.0-20210819203725-bdf08cb9a70a
+	k8s.io/utils v0.0.0-20221107191617-1a15be271d1d
 	sigs.k8s.io/controller-runtime v0.10.2
 )
 
